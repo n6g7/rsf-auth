@@ -1,7 +1,12 @@
 .babelrc
+.circleci
 .git
+.prettierrc.yml
 .vscode
+__snapshots__
 circle.yml
 coverage
 node_modules
 yarn-error.log
+
+*.test.js
