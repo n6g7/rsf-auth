@@ -20,6 +20,7 @@
     "build": "yarn del && NODE_ENV=production babel lib --out-dir dist",
     "prepare": "yarn build",
     "prepublishOnly": "yarn test",
+    "pretest": "prettier -l 'lib/**/*.js'",
     "test": "NODE_ENV=test jest",
     "test:coverage": "yarn test --coverage"
   },
