@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reducer returns the initial state when called without arguments 1`] = `
+Object {
+  "loading": false,
+  "loggedIn": false,
+  "user": null,
+}
+`;

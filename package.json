@@ -19,7 +19,9 @@
     "del": "rimraf dist",
     "build": "yarn del && NODE_ENV=production babel lib --out-dir dist",
     "prepare": "yarn build",
-    "prepublishOnly": "yarn test"
+    "prepublishOnly": "yarn test",
+    "test": "NODE_ENV=test jest",
+    "test:coverage": "yarn test --coverage"
   },
   "dependencies": {
     "redux-saga": "^0.16.0",
@@ -33,7 +35,18 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-3": "^6.24.1",
+    "jest": "^22.0.4",
     "prettier": "^1.9.2",
     "rimraf": "^2.6.2"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
   }
 }

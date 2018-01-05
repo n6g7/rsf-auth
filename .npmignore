@@ -2,5 +2,6 @@
 .git
 .vscode
 circle.yml
+coverage
 node_modules
 yarn-error.log

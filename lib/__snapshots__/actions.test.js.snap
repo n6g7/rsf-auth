@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`actions login() works 1`] = `
+Object {
+  "type": "@RSFAUTH_LOGIN.REQUEST",
+}
+`;
+
+exports[`actions loginFailure(error) works 1`] = `
+Object {
+  "error": "qsdk",
+  "type": "@RSFAUTH_LOGIN.FAILURE",
+}
+`;
+
+exports[`actions loginSuccess(credential) works 1`] = `
+Object {
+  "credential": "qsdk",
+  "type": "@RSFAUTH_LOGIN.SUCCESS",
+}
+`;
+
+exports[`actions logout() works 1`] = `
+Object {
+  "type": "@RSFAUTH_LOGOUT.REQUEST",
+}
+`;
+
+exports[`actions logoutFailure(error) works 1`] = `
+Object {
+  "error": "qsdk",
+  "type": "@RSFAUTH_LOGOUT.FAILURE",
+}
+`;
+
+exports[`actions logoutSuccess() works 1`] = `
+Object {
+  "type": "@RSFAUTH_LOGOUT.SUCCESS",
+}
+`;
+
+exports[`actions syncUser(user) works 1`] = `
+Object {
+  "type": "@RSFAUTH_SYNC_USER",
+  "user": "qsdk",
+}
+`;
