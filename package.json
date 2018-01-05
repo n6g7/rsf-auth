@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Reducer, actions and sagas to handle authentication with redux-saga-firebase",
   "author": "Nathan Gaberel <nathan@gnab.fr>",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "repository": {
     "url": "git@github.com:n6g7/rsf-auth.git",
     "type": "git"
@@ -15,11 +15,25 @@
     "redux-saga",
     "redux-saga-firebase"
   ],
+  "scripts": {
+    "del": "rimraf dist",
+    "build": "yarn del && NODE_ENV=production babel lib --out-dir dist",
+    "prepare": "yarn build",
+    "prepublishOnly": "yarn test"
+  },
   "dependencies": {
     "redux-saga": "^0.16.0",
     "reselect": "^3.0.1"
   },
   "peerDependencies": {
     "redux-saga-firebase": "^0.8.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "prettier": "^1.9.2",
+    "rimraf": "^2.6.2"
   }
 }
