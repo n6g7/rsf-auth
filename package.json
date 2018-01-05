@@ -1,0 +1,25 @@
+{
+  "name": "rsf-auth",
+  "version": "0.0.1",
+  "description": "Reducer, actions and sagas to handle authentication with redux-saga-firebase",
+  "author": "Nathan Gaberel <nathan@gnab.fr>",
+  "main": "lib/index.js",
+  "repository": {
+    "url": "git@github.com:n6g7/rsf-auth.git",
+    "type": "git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "authentication",
+    "firebase",
+    "redux-saga",
+    "redux-saga-firebase"
+  ],
+  "dependencies": {
+    "redux-saga": "^0.16.0",
+    "reselect": "^3.0.1"
+  },
+  "peerDependencies": {
+    "redux-saga-firebase": "^0.8.0"
+  }
+}
