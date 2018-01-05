@@ -1,0 +1,44 @@
+version: 2
+
+jobs:
+  build:
+    working_directory: ~/rsf-auth
+
+    docker:
+      - image: node:latest
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - rsf-auth-{{ .Branch }}-{{ checksum "package.json" }}
+            - rsf-auth-{{ .Branch }}
+            - rsf-auth-master-{{ checksum "package.json" }}
+            - rsf-auth-master
+
+      - run:
+          name: Install dependencies
+          command: yarn
+
+      - run:
+          name: Run tests
+          command: yarn test:coverage
+
+      - run:
+          name: Install coveralls
+          command: yarn global add coveralls
+
+      - run:
+          name: Send coverage to coveralls.io
+          command: |
+            if [ -z "$CIRCLE_PR_REPONAME" ];
+            then
+              cat coverage/lcov.info | coveralls;
+            fi
+
+      - save_cache:
+          key: rsf-auth-{{ .Branch }}-{{ checksum "package.json" }}
+          paths:
+            - ~/.yarn
+            - ~/rsf-auth/node_modules
