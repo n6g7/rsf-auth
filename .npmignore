@@ -4,6 +4,7 @@
 .prettierrc.yml
 .vscode
 __snapshots__
+actions.js
 circle.yml
 coverage
 node_modules
