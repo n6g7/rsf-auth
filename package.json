@@ -18,7 +18,7 @@
   "scripts": {
     "del": "rimraf dist",
     "build": "yarn del && NODE_ENV=production babel lib --out-dir dist",
-    "postinstall": "ln -s dist/actions.js ./actions.js",
+    "postinstall": "ln -fs dist/actions.js ./actions.js",
     "prepare": "yarn build",
     "prepublishOnly": "yarn test",
     "pretest": "prettier -l 'lib/**/*.js'",
