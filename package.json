@@ -30,7 +30,7 @@
     "reselect": "^3.0.1"
   },
   "peerDependencies": {
-    "redux-saga-firebase": "^0.8.0"
+    "redux-saga-firebase": ">=0.8.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
