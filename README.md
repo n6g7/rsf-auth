@@ -1,10 +1,9 @@
 # rsf-auth
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/n6g7/rsf-auth.svg)](https://greenkeeper.io/)
-
 [![CircleCI](https://circleci.com/gh/n6g7/rsf-auth.svg?style=svg)](https://circleci.com/gh/n6g7/rsf-auth)
 [![npm version](https://badge.fury.io/js/rsf-auth.svg)](https://badge.fury.io/js/rsf-auth)
 [![Coverage Status](https://coveralls.io/repos/github/n6g7/rsf-auth/badge.svg?branch=master)](https://coveralls.io/github/n6g7/rsf-auth?branch=master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/n6g7/rsf-auth.svg)](https://greenkeeper.io/)
 [![Known Vulnerabilities](https://snyk.io/test/github/n6g7/rsf-auth/badge.svg?targetFile=package.json)](https://snyk.io/test/github/n6g7/rsf-auth?targetFile=package.json)
 
 Reducer, actions and sagas to handle authentication with [redux-saga-firebase](https://www.npmjs.com/package/redux-saga-firebase).

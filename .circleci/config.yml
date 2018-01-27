@@ -22,12 +22,20 @@ jobs:
           command: yarn
 
       - run:
+          name: Install global dependencies
+          command: yarn global add coveralls greenkeeper-lockfile
+
+      - run:
+          name: Update lockfile
+          command: greenkeeper-lockfile-update
+
+      - run:
           name: Run tests
           command: yarn test:coverage
 
       - run:
-          name: Install coveralls
-          command: yarn global add coveralls
+          name: Upload lockfile
+          command: greenkeeper-lockfile-upload
 
       - run:
           name: Send coverage to coveralls.io
@@ -40,5 +48,6 @@ jobs:
       - save_cache:
           key: rsf-auth-{{ .Branch }}-{{ checksum "package.json" }}
           paths:
+            - ~/.config/yarn
             - ~/.yarn
             - ~/rsf-auth/node_modules
