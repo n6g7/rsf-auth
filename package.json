@@ -1,6 +1,6 @@
 {
   "name": "rsf-auth",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Reducer, actions and sagas to handle authentication with redux-saga-firebase",
   "author": "Nathan Gaberel <nathan@gnab.fr>",
   "main": "dist/index.js",
