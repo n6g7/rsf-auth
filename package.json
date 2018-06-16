@@ -26,10 +26,10 @@
     "test:coverage": "yarn test --coverage"
   },
   "dependencies": {
-    "redux-saga": "^0.16.0",
     "reselect": "^3.0.1"
   },
   "peerDependencies": {
+    "redux-saga": "^0.16.0 || ^1.0.0-beta",
     "redux-saga-firebase": ">=0.8.0"
   },
   "devDependencies": {
