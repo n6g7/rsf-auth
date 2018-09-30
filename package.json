@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "redux-saga": "^0.16.0",
-    "reselect": "^3.0.1"
+    "reselect": "^4.0.0"
   },
   "peerDependencies": {
     "redux-saga-firebase": ">=0.8.0"
